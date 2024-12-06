@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nav Page</title>
+  </head>
+  <body>
+    <div class="text-3xl font-bold text-black dark:text-white 0">
+      <div class="dark:bg-stone-900 p-2">
+        Laravel
+        <span class="float-end">
+          <button id="theme-toggle">
+            <label
+              for=""
+              class="text-black text-xl hover:text-2xl dark:text-white"
+              >Dark Mode</label
+            >
+            <i
+              class="fa-solid fa-lightbulb fa-bounce fa-xl m-3 text-green-400 hover:text-black dark:hover:text-white"
+            ></i>
+          </button>
+        </span>
+      </div>
+      <div class="bg-white grid grid-cols-4 text-xl dark:bg-black">
+        <div class="col-span-1 min-h-screen font-normal">
+          <ul>
+            <li
+              class="p-2 pt-5 mx-3 rounded-lg hover:text-green-500 hover:text-2xl;"
+            >
+              <a href=""
+                ><i class="fa-solid fa-house p-1 m-1 text-neutral-600"></i
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href=""
+                ><i
+                  class="fa-solid fa-building-user p-1 m-1 text-neutral-600"
+                ></i
+                >Employees</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href=""
+                ><i
+                  class="fa-solid fa-building-user p-1 m-1 text-neutral-600"
+                ></i
+                >Users</a
+              >
+            </li>
+            <li class="p-2 pt-5 mx-7 bg-stone-300 rounded-lg">
+              <a href=""
+                ><i class="fa-brands fa-centos p-1 m-1 text-neutral-600"></i
+                >System Management</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href=""
+                ><i class="fa-regular fa-flag p-1 m-1 text-neutral-600"></i
+                >Countries</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href=""
+                ><i
+                  class="fa-solid fa-building-user p-1 m-1 text-neutral-600"
+                ></i
+                >Cities</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href=""
+                ><i
+                  class="fa-solid fa-building-user p-1 m-1 text-neutral-600"
+                ></i
+                >States</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="">
+                <i
+                  class="fa-solid fa-building-user p-1 m-1 text-neutral-600"
+                ></i
+                >Departments</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-span-3">
+          <div class="text- text-base hover:text-blue-400 hover:text-xl">
+            <a href=""> Users > List</a>
+          </div>
+          <div>
+            <span class="text-3xl">Users</span>
+            <button
+              class="bg-green-500 rounded-lg py-1 px-3 m-2 text-base float-right hover:bg-orange-300 focus:bg-blue-400 hover:text-lg"
+            >
+              New Users <i class="fa-solid fa-user text-neutral-600"></i>
+            </button>
+          </div>
+          <div class="my-10 font-normal">
+            <div
+              class="bg-stone-200 p-3 min-h-14 rounded-t-xl dark:bg-neutral-800"
+            >
+              <span class="float-end">
+                <input
+                  type="text"
+                  class="bg-stone-300 border border-stone-500 py-1 px-3 rounded-lg text-base dark:bg-neutral-500 dark:placeholder:text-slate-300"
+                  placeholder="Search"
+                /><i
+                  class="fa-solid fa-box fa-xl m-3 text-stone-500 dark:text-stone-300"
+                ></i>
+              </span>
+            </div>
+
+            <table class="w-full py-1 px-10 min-h-14">
+              <tr
+                class="bg-stone-200 border border-x-0 border-collapse border-y-stone-500 dark:bg-neutral-800 dark:border dark:border-x-0 dark:border-y-stone-500 dark:border-collapse"
+              >
+                <td class="p-4 w-2/6">
+                  <input class="p-1 m-2" type="checkbox" />
+                  <label for="input">Name</label>
+                </td>
+                <td class="w-2/6">Email</td>
+                <td class="w-full">Email verified at</td>
+              </tr>
+
+              <tr
+                class="bg-stone-200 border border-x-0 border-y-stone-500 dark:bg-neutral-800 dark:border dark:border-x-0 dark:border-y-stone-500 dark:border-collapse"
+              >
+                <td class="p-4 w-2/6">
+                  <input class="border-red-800 p-1 m-2" type="checkbox" />
+                  <label for="input">Admin</label>
+                </td>
+                <td class="w-2/6">Admin@gmail.com</td>
+                <td>
+                  <span class="hover:text-green-500"
+                    ><i class="fa-solid fa-eye text-sm p-1 text-stone-500"></i
+                    >View</span
+                  >
+                  <span class="text-blue-500 hover:text-red-400"
+                    ><i class="fa-solid fa-pen-to-square text-sm p-1 ml-4"></i
+                    >Edit</span
+                  >
+                </td>
+              </tr>
+            </table>
+
+            <div
+              class="bg-stone-200 p-3 min-h-14 rounded-b-2xl dark:bg-neutral-800"
+            >
+              <span>Showing 1 result</span>
+              <input
+                type="text"
+                placeholder="per-page "
+                class="rounded-s-lg bg-stone-300 placeholder:text-black w-32 py-1 ml-96 px-3 outline-none dark:bg-neutral-500 dark:placeholder:text-white"
+              />
+              <select
+                class="rounded-e-lg bg-stone-300 text-black py-1 px-4 outline-none dark:bg-neutral-500 dark:text-white"
+              >
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--javascript-->
+
+    <script>
+      const toggleButton = document.getElementById("theme-toggle");
+      const htmlElement = document.documentElement;
+
+      toggleButton.addEventListener("click", () => {
+        htmlElement.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
